@@ -1,14 +1,5 @@
 function createGraph(items) {
-    let items = [
-        ["cheese",'MON', 1200],
-        ["APPLE", 'TUE', 2300],
-        ["dwad", 'FRI', 1000],
-        ["dwad", 'SUN', 100],
-        ["dwad", 'WED', 3800], 
-        ["dwad", 'MON', 1000],
-        ["dwad", 'THU', 100],
-        ["dwad", 'SAT', 3800] 
-    ];
+    //items is a 2D array with nested array of structure: [food_name, date, calories]
 
     let calories = {}
     calories['SUN'] = 0
@@ -28,7 +19,6 @@ function createGraph(items) {
     foods['FRI'] = []
     foods['SAT'] = []
 
-    //#2d array each inside array is [foodnaem, 'MON', calorie]
     for (i in items) {
         let arr = items[i]
         foods[arr[1]].push(arr[0])
@@ -54,8 +44,3 @@ function createGraph(items) {
   }
 
 
-let items = [
-    ["cheese",'MON', 1200],
-    ["APPLE", 'TUE', 2300],
-    ["dwad", 'WED', 1000], 
-];
