@@ -2,20 +2,13 @@
 <html lang="en">
 
 <head>
-  <!-- comment does this show up -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Firebase Basics</title>
+  <title>Foodaily</title>
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -61,13 +54,15 @@
 
     <button id="signOutBtn" class="btn btn-primary">Sign Out</button>
 
+    <button onclick="window.location='html/foodStats.html';" id="foodStats" class="btn btn-primary">Food Stats</button>
+
   </section>
 
   <hr>
 
   <section>
 
-    <h2>My Diary Entries</h2>
+    <h2>Today's food</h2>
 
     <ul id="entryList">
 
@@ -84,8 +79,6 @@
     <br />
     <button id="createEntry" class="btn btn-success">Create Entry</button>
   </section>
-
-
 
 
 </body>

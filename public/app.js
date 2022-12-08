@@ -27,6 +27,7 @@ signOutBtn.onclick = () => {
     location.reload()
 }
 
+
 onAuthStateChanged(auth, (user) => {
     if (user) {
         // signed in
@@ -83,20 +84,18 @@ onAuthStateChanged(auth, (user) => {
             console.log(timestamp)
             const newEntryRef = await addDoc(entryRef, {
                 uid: user.uid,
-                // entry: entryText.value,
                 timestamp: timestamp,
                 name: nameText.value,
                 type: typeText.value,
                 calories: calText.value,
             });
 
-            // entryText.value = ""
+            nameText.value = "";
+            typeText.value = "";
+            calText.value = "";
             console.log("Document written at", newEntryRef.timestamp);
             findEntries(user)
         }
 
-        //clearEntries.onclick = async () {
-        //    entryList = []
-        // }
     }
 });
