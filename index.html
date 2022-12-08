@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+</style>
+<script src="frontEnd.js"></script>
+<body>
+    <button id="init" onclick="createGraph()"> Update </button>
+
+    <div class="graph-container">
+        <ul class="bar-graph">
+            <li class="bar-graph-axis">
+              <div class="bar-graph-label">4000</div>
+              <div class="bar-graph-label">3000</div>
+              <div class="bar-graph-label">2000</div>
+              <div class="bar-graph-label">1500</div>
+              <div class="bar-graph-label">1000</div>
+              <div class="bar-graph-label">500</div>
+              <div class="bar-graph-label">0</div>
+            </li>
+            <li class="bar primary" id="SUN" style="height: 95%;" title="95">
+              <div class="percent"> </div>
+              <div class="description">Sunday</div>
+            </li>
+            <li class="bar secondary" id="MON" style="height: 90%;" title="90">
+              <div class="percent"></div>
+              <div class="description">Monday</div>
+            </li>
+            <li class="bar success" id="TUE" style="height: 80%;" title="80">
+              <div class="percent"></div>
+              <div class="description">Tuesday</div>
+            </li>
+            <li class="bar warning" id="WED"style="height: 75%;" title="75">
+              <div class="percent"></div>
+              <div class="description">Wednesday</div>
+            </li>
+            <li class="bar alert" id="THU" style="height: 40%;" title="40">
+              <div class="percent"></div>
+              <div class="description">Thursday</div>
+            </li>
+            <li class="bar alert" id="FRI" style="height: 40%;" title="40">
+                <div class="percent"></div>
+                <div class="description">Friday</div>
+              </li>
+              <li class="bar alert" id="SAT" style="height: 40%;" title="40">
+                <div class="percent"></div>
+                <div class="description">Saturday</div>
+              </li>
+          </ul>
+    </div>
+</body>
+</html>
+
